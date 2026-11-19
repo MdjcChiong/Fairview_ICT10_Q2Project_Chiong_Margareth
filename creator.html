@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Creator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            color: #8b5144;
+            background-color: #eff4dc;
+            background-image:
+                linear-gradient(rgba(239, 244, 220, 0.18), rgba(239, 244, 220, 0.18)),
+                url("creator-background.png");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVIGATION BAR */
+        .navbar {
+            width: 100%;
+            padding: 18px 5%;
+            background: #663000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .brand {
+            color: white;
+            text-decoration: none;
+            font-family: 'Anton', Impact, sans-serif;
+            font-size: 23px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ffe0a8;
+        }
+
+        /* CREATOR PAGE */
+        .creator-page {
+            width: min(1120px, 92%);
+            margin: 35px auto 55px;
+        }
+
+        .creator-heading {
+            margin: 0 0 28px;
+            color: #965347;
+            font-family: "Anton", Impact, sans-serif;
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: normal;
+        }
+
+        .creator-layout {
+            display: grid;
+            grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.5fr);
+            gap: 42px;
+            align-items: center;
+        }
+
+        .creator-profile {
+            text-align: center;
+        }
+
+        .creator-photo {
+            display: block;
+            width: min(250px, 80%);
+            height: 300px;
+            margin: 0 auto 28px;
+            object-fit: cover;
+            object-position: center 35%;
+            border-radius: 50%;
+        }
+
+        .creator-name {
+            margin: 0 0 12px;
+            color: #965347;
+            font-size: 25px;
+            font-weight: normal;
+        }
+
+        .creator-section {
+            margin: 0;
+            color: #965347;
+            font-size: 21px;
+        }
+
+        .creator-info {
+            display: grid;
+            gap: 22px;
+        }
+
+        .creator-info article {
+            min-height: 145px;
+            padding: 24px 34px;
+            background: rgba(255, 255, 250, 0.88);
+            border-radius: 28px;
+            box-sizing: border-box;
+        }
+
+        .creator-info h2 {
+            margin: 0 0 18px;
+            color: #965347;
+            font-family: "Anton", Impact, sans-serif;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .creator-info p {
+            margin: 0;
+            color: #986052;
+            font-size: 16px;
+            line-height: 1.55;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #965347;
+        }
+
+        @media (max-width: 700px) {
+            .navbar {
+                justify-content: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+                gap: 13px;
+            }
+
+            .creator-page {
+                margin-top: 28px;
+            }
+
+            .creator-layout {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .creator-photo {
+                width: 210px;
+                height: 250px;
+            }
+
+            .creator-info article {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <a class="brand" href="index.html">MY Q2 WEBSITE</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="element_checker.html">Element Checker</a>
+            <a href="club_members.html">School Club Members</a>
+            <a class="active" href="creator.html">Meet the Creator</a>
+        </div>
+    </nav>
+
+    <!-- CREATOR INFORMATION -->
+    <main class="creator-page">
+
+        <h1 class="creator-heading">Meet the creator</h1>
+
+        <div class="creator-layout">
+
+            <section class="creator-profile">
+
+                <!-- PROFILE PICTURE -->
+                <img
+                    class="creator-photo"
+                    src="creator-photo.png"
+                    alt="Maggie's profile picture"
+                >
+
+                <p class="creator-name">Maggie Chiong</p>
+                <p class="creator-section">10 Sapphire</p>
+
+            </section>
+
+            <section class="creator-info">
+
+                <article>
+                    <h2>My interests</h2>
+                    <p>
+                        I'm interested in watching shows and anime, especially
+                        Paradise Kiss, Haikyuu!!, and Death Note. I enjoy the
+                        shows' vibes, the stories, and the lessons they teach.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>My hobbies</h2>
+                    <p>
+                        During my free time, I enjoy watching shows and cooking.
+                        These are some of the things I like doing whenever I
+                        want to relax or try something different.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>My dreams</h2>
+                    <p>
+                        In the future, I hope to graduate, have a successful
+                        career, and travel to different places. I want to
+                        experience more things and make the most out of life.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>My favorite quote</h2>
+                    <p>"You only live once."</p>
+                </article>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        My Second Quarter Website • Python / PyScript
+    </footer>
+
+</body>
+</html>
